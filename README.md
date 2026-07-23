@@ -1,4 +1,4 @@
-# HappyMe - Habit Tracker & Wellness App 🌱
+# HappyMe - Habit Tracker & Wellness App 
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white)
@@ -85,28 +85,10 @@ The app follows MVVM architecture with clean separation of concerns and real-tim
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
-### Launching Screen
-<img src="Documentation/images/launching.png" width="250">  
-
-### Home Dashboard
-<img src="Documentation/images/home.jpg" width="250">
-
-### Routine Management
-<img src="Documentation/images/routine.jpg" width="250">
-
-### Mind Tracking
-<img src="Documentation/images/fuel.jpg" width="250">
-
-### Fuel Tracker
-<img src="Documentation/images/mind.jpg" width="250">
-
-### MeTime Profile
-<img src="Documentation/images/user.jpg" width="250">
-
-### Dark Mode
-<img src="Documentation/images/user_dark.jpg" width="250">
+<img src="Documentation/images/launching.png" height="500">     <img src="Documentation/images/routine.jpg" height="500">    <img src="Documentation/images/mind.jpg" height="500">    <img src="Documentation/images/fuel.jpg" height="500">  
+<img src="Documentation/images/home.jpg" width="220"> <img src="Documentation/images/user.jpg" height="660"> <img src="Documentation/images/user_dark.jpg" height="660">  
 
 ---
 
