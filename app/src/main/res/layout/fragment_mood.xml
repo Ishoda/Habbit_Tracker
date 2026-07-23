@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitish"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/mood_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Mood Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/moodViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/moodQuote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your mood quote here"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:textColor="#FFB86B"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Notes Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#ECF8E3"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/moodNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAEFCF"
+                android:hint="@string/mood_note"
+                android:minLines="3"
+                android:padding="16dp"
+                android:textColor="#234017"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveMood"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_green_btn"
+            android:text="Save Mood"
+            android:textColor="#0F0E0E"
+            android:textColorLink="@color/darkBackground"
+            android:textStyle="bold" />
+
+        <!-- History Button -->
+        <Button
+            android:id="@+id/btnMoodHistory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_green_btn"
+            android:text="View History"
+            android:textColor="#101010"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

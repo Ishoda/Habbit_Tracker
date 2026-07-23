@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PersonalizeHabit">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Pick your daily habits:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 🔹 Grid of selectable habits -->
+        <GridLayout
+            android:id="@+id/gridHabits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true"
+            android:alignmentMode="alignMargins">
+
+            <!-- 🔸 1. Wake Up Early -->
+            <LinearLayout
+                android:id="@+id/itemWakeUp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_habit_unselected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/imgWakeUp"
+                    android:src="@drawable/ic_wakeup"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"/>
+                <TextView
+                    android:text="Wake up early"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="Start your day with energy!"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 🔸 2. Plan Your Day -->
+            <LinearLayout
+                android:id="@+id/itemPlanDay"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_habit_unselected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/imgPlanDay"
+                    android:src="@drawable/ic_plan"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"/>
+                <TextView
+                    android:text="Plan your day"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="Set goals, achieve more!"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 🔸 3. Mindfulness -->
+            <LinearLayout
+                android:id="@+id/itemMindfulness"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_habit_unselected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/imgMindfulness"
+                    android:src="@drawable/ic_mindful"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"/>
+                <TextView
+                    android:text="Mindfulness"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="Be present, stay calm!"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 🔸 4. Move Your Body -->
+            <LinearLayout
+                android:id="@+id/itemMoveBody"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_habit_unselected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/imgMoveBody"
+                    android:src="@drawable/ic_exercise"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"/>
+                <TextView
+                    android:text="Move your body"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="Stay active, stay fit!"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 🔸 5. Eat Healthy -->
+            <LinearLayout
+                android:id="@+id/itemEatHealthy"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_habit_unselected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/imgEatHealthy"
+                    android:src="@drawable/ic_eat_healthy"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"/>
+                <TextView
+                    android:text="Eat healthy"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="Fuel your body right!"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 🔸 6. Practice Gratitude -->
+            <LinearLayout
+                android:id="@+id/itemGratitude"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_habit_unselected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/imgGratitude"
+                    android:src="@drawable/ic_gratitude"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"/>
+                <TextView
+                    android:text="Practice gratitude"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="Appreciate the little things!"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 🔸 7. Take a Digital Break -->
+            <LinearLayout
+                android:id="@+id/itemDigitalBreak"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_habit_unselected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/imgDigitalBreak"
+                    android:src="@drawable/ic_digital_break"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"/>
+                <TextView
+                    android:text="Take a digital break"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="Unplug to recharge!"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+
+            <!-- 🔸 8. Get Enough Sleep -->
+            <LinearLayout
+                android:id="@+id/itemSleep"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/bg_habit_unselected"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1">
+                <ImageView
+                    android:id="@+id/imgSleep"
+                    android:src="@drawable/ic_sleep"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"/>
+                <TextView
+                    android:text="Get enough sleep"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <TextView
+                    android:text="Recharge your body and mind!"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnHabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:text="Save Habits"/>
+    </LinearLayout>
+</ScrollView>

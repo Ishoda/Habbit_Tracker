@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120sp"
+                android:background="@drawable/rounded_green_frame"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="80dp">
+
+                <!-- Logo -->
+
+                <!-- Title -->
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="24dp"
+                    android:contentDescription="Logo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_logo" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Login"
+                    android:textColor="@color/logo_color"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <!-- Email -->
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/rounded_input_bg"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/logo_color"
+                    android:textColorHint="#497A4A" />
+
+                <!-- Password -->
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/rounded_input_bg"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+
+                    android:paddingLeft="12dp"
+                    android:textColor="#FFF8F0"
+                    android:textColorHint="@color/logo_color" />
+
+                <!-- Login Button -->
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:backgroundTint="@color/btn_login"
+                    android:text="Login"
+                    android:textColor="@color/darkBackground"
+                    android:textStyle="bold" />
+
+                <!-- Signup Link -->
+                <TextView
+                    android:id="@+id/tvSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/signUp"
+                    android:textColor="@color/logo_color"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</FrameLayout>

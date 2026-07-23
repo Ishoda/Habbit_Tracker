@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">HappyMe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app">HappyMe</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slogen">My Wellness Journey</string>
+    <string name="log_out">Log out</string>
+    <string name="header_greeting">Good Morning John</string>
+    <string name="header_date">Oct 2, 2025 - 10:00 AM</string>
+    <string name="remove">-</string>
+    <string name="add">+</string>
+    <string name="memberTime">Member since January 2024</string>
+    <string name="name">John Doe</string>
+    <string name="sub_heading_prof">Your stats</string>
+    <string name="mood_note">Want to reflect? Write here</string>
+    <string name="signUp">Don\'t have an account? Sign up</string>
+    <string name="login">"Already have an account? Sign in"</string>
+    <string name="congratulation_msg">"Congratulations! All habits are done!"</string>
+    <string name="hydration_msg">Keep drinking water</string>
+
+
+    <!-- Add this to res/values/strings.xml -->
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="reminder_intervals">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/afacad_semibold</item>
+        <item>@font/amarante</item>
+        <item>@font/andada_pro</item>
+        <item>@font/anonymous_pro</item>
+        <item>@font/ar_one_sans</item>
+        <item>@font/be_vietnam_pro_light</item>
+        <item>@font/cantata_one</item>
+        <item>@font/concert_one</item>
+        <item>@font/cormorant_infant_bold</item>
+        <item>@font/libre_franklin_extralight</item>
+    </array>
+</resources>

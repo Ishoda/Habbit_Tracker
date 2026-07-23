@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/round_bungalow_24"
+        android:title="Journey" />
+    <item
+        android:id="@+id/nav_habits"
+        android:icon="@drawable/baseline_self_improvement_24"
+        android:title="Routine" />
+    <item
+        android:id="@+id/nav_mood"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="Mind" />
+    <item
+        android:id="@+id/nav_hydration"
+        android:icon="@drawable/baseline_water_drop_24"
+        android:title="Fuel" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Me Time" />
+</menu>

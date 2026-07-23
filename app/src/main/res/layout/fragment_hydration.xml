@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitish">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp">
+
+        <TextView
+            android:id="@+id/tvCups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 / 8 cups"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:textColor="#222222"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Bottle: Large, left-aligned -->
+            <FrameLayout
+                android:id="@+id/bottleContainer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_gravity="start"
+                android:layout_marginStart="8dp">
+
+                <ImageView
+                    android:id="@+id/bottleOutline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_outline"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/bottle_c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_c1"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/bottle_c2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_c2"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/bottle_c3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_c3"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/bottle_c4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_c4"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/bottle_c5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_c5"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/bottle_c6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_c6"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/bottle_c7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_c7"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/bottle_c8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bottle_c8"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <!-- Add/Remove Buttons: Right side, vertical, round, black, icon only -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/rounded_black_button"
+                    android:elevation="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/add"
+                    android:textColor="#FDF6EE"
+                    android:textSize="34sp" />
+
+                <Button
+                    android:id="@+id/btnRemove"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/rounded_black_button"
+                    android:elevation="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/remove"
+                    android:textColor="#FDF6EE"
+                    android:textSize="34sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- History and Reset Buttons (optional, style as needed) -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:text="History"
+                android:backgroundTint="#222222"
+                android:textColor="#FFF8F0"
+                android:background="@drawable/rounded_button"
+                android:elevation="6dp"
+                android:layout_marginEnd="12dp"/>
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:text="Reset Today"
+                android:backgroundTint="#222222"
+                android:textColor="#FFF8F0"
+                android:background="@drawable/rounded_black_button"
+                android:elevation="6dp"/>
+        </LinearLayout>
+
+        <!-- Reminder Section (unchanged, style as needed) -->
+        <LinearLayout
+            android:id="@+id/reminderSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#694C93E6"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Hydration Reminder"
+                android:textColor="#1565C0"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Reminder"
+                android:textSize="16sp"
+                android:textColor="#1565C0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Interval (hours):"
+                    android:textSize="16sp"
+                    android:textColor="#1565C0"/>
+
+                <Spinner
+                    android:id="@+id/spinnerInterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:entries="@array/reminder_intervals"
+                    android:textColor="#1565C0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

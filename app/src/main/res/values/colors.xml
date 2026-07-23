@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#1B1B1B</color>
+    <color name="white">#EBE9E9</color>
+    <color name="green">#2979FF</color>
+    <color name="lightGreen">#B9DFEB</color>
+
+    <!-- Light Mode -->
+    <color name="lightBackground">#FFFFFF</color>
+    <color name="lightText">#000000</color>
+
+    <!-- Dark Mode -->
+    <color name="darkBackground">#000000</color>
+    <color name="darkText">#FFFFFF</color>
+
+
+    <color name="logo_color">#7E8E69</color>
+    <color name="nav_icons">#717F5E</color>
+    <color name="transparent">#00111111</color>
+    <color name="green_log_out">#5F9112</color>
+    <color name="teal_700">#018786</color>
+    <color name="red">#E32110</color>
+    <color name="btnLogin">#606E54</color>
+    <color name="btn_login">#725F6D53</color>
+    <color name="whitish">#EEF1E2</color>
+    <color name="whitish_1">#E9EDD7</color>
+    <color name="header">#A3A9A3</color>
+</resources>
