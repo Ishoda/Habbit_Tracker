@@ -87,7 +87,7 @@ The app follows MVVM architecture with clean separation of concerns and real-tim
 
 ##  Screenshots
 
-<img src="Documentation/images/launching.png" height="500">     <img src="Documentation/images/routine.jpg" height="500">    <img src="Documentation/images/mind.jpg" height="500">    <img src="Documentation/images/fuel.jpg" height="500">  
+<img src="Documentation/images/launching.png" height="480">     <img src="Documentation/images/routine.jpg" height="480">    <img src="Documentation/images/mind.jpg" height="480">    <img src="Documentation/images/fuel.jpg" height="480">  
 <img src="Documentation/images/home.jpg" width="220"> <img src="Documentation/images/user.jpg" height="660"> <img src="Documentation/images/user_dark.jpg" height="660">  
 
 ---
